@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet"> 
+    <title>E-Kart-Tailwind</title>
+</head>
+
+<body class="bg-gray-200">
+    <nav class="mx-auto px-8 py-4 flex justify-between border bg-white sticky top-0 z-20">
+            <a href="#"> <h1 class="text-blue-800 text-4xl font-bold">Ekart</h1></a> 
+        <div class="w-1/2 bg-sky-100 flex gap-2 p-2 rounded-lg">
+            <img src="./images/navbar/search.svg" alt="search" class="w-[1.5rem] cursor-pointer" />
+            <input type="text" placeholder="Search for products, Brands and More.."
+                class="w-full bg-sky-100 text-black outline-0" />
+        </div>
+        <ul class="flex justify-around gap-10">
+            <li class="flex items-center justify-center gap-3">
+                <a href="#" class="flex gap-3">
+                    <img src="./images/navbar/seller.svg" alt="seller" />
+                    <p class="w-[8rem]">Become a Seller</p>
+                </a>
+            </li>
+            <li class="flex items-center justify-center gap-3">
+                <a href="#" class="flex gap-3">
+                    <img src="./images/navbar/profile.svg" alt="profile" />
+                    <p>Sign in</p>
+                    
+                </a>
+            </li>
+            <li class="flex items-center justify-center gap-3">
+                <a href="#" class="flex gap-3">
+                    <img src="./images/navbar/cart.svg" alt="cart" />
+                    <p>Cart</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="flex justify-evenly container mx-auto px-4 py-4 my-2 border bg-white">
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/surf.webp" alt="grocery" class="w-[5rem]" />
+                <p class="text-center font-semibold">Grocery</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu//mobiles.webp" alt="mobile" class="w-[5rem]" />
+                <p class="text-center font-semibold">Mobiles</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/fashion.webp" alt="fashion" class="w-[5rem]" />
+                <p class="text-center font-semibold">Fashion</p>
+            </a>
+        </div>
+        <div>
+            <a href="#eletronics" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/electronics.webp" alt="Electronics" class="w-[5rem]" />
+                <p class="text-center font-semibold">Electronics</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="relative flex-col items-center justify-center" >
+                <img src="./images/menu/furniture.webp" alt="furniture" class="w-[5rem]" />
+                <p class="text-center font-semibold" id="furniture">Furniture</p>
+                <ul class="absolute hidden bg-white z-20 m-5" id="furniture-list">
+                    <li>category 1</li>
+                    <li>category 2</li>
+                    <li>category 3</li>
+                    <li>category 4</li>
+                    <li>category 5</li>
+                </ul>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/appliances.webp" alt="appliances" class="w-[5rem]" />
+                <p class="text-center font-semibold">Appliances</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/travel.webp" alt="travel" class="w-[5rem]" />
+                <p class="text-center font-semibold">Travel</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/toys.webp" alt="toys" class="w-[5rem]" />
+                <p class="text-center font-semibold">Toys</p>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="flex flex-col items-center justify-center">
+                <img src="./images/menu/bike.webp" alt="bike" class="w-[5rem]" />
+                <p class="text-center font-semibold">Two Wheelers</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-4 my-2 relative">
+        <img src="./images/hero/left.svg" alt="left-arrow" class="w-8 absolute top-[35%] m-7 arrow-left cursor-pointer hover:bg-white rounded-lg p-2" />
+        <div>
+            <div class="image-slider w-[100%]">
+                <img src="./images/hero/chair.webp" alt="chair" />
+            </div>
+            <div class="image-slider w-[100%]">
+                <img src="./images/hero/girl-image.webp" alt="girl" />
+            </div>
+            <div class="image-slider w-[100%]">
+                <img src="./images/hero/jet.webp" alt="plane" />
+            </div>
+            <div class="image-slider w-[100%]">
+                <img src="./images/hero/phone.webp" alt="phone" />
+            </div>
+            <div class="image-slider w-[100%]">
+                <img src="./images/hero/comp.webp" alt="computer" />
+            </div>
+        </div>
+        <img src="./images/hero/right.svg" alt="right-arrow" class="w-8 absolute top-[35%] right-0 m-7 arrow-right cursor-pointer hover:bg-white rounded-lg p-2" />
+    </section>
+
+    <section class="container mx-auto px-4 py-4 pb-8 flex gap-3">
+        <div class="flex flex-col gap-3 bg-white px-2 " id="electronics">
+            <h2 class="text-2xl font-bold py-2 my-4">Best In Electronics</h2>
+            <div class="flex items-center gap-3 mb-2">
+                <div class="flex justify-around gap-2">
+                    <a href="./mac.html" class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto hover:scale-105 flex items-center py-2">
+                            <img src="./images/electronics/monitors.webp" alt="monitor" />
+                        </div>
+                        <div class="text-center">
+                            <p>Monitors</p>
+                            <p class="font-semibold">From ₹ 6599</p>
+                        </div>
+                    </a>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/electronics/camera.webp" alt="camera" />
+                        </div>
+                        <div class="text-center">
+                            <p>Top Cameras</p>
+                            <p class="font-semibold">Shop Now!</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/electronics/printer.webp" alt="printer" />
+                        </div>
+                        <div class="text-center">
+                            <p>Printers</p>
+                            <p class="font-semibold">From ₹ 2499</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/electronics/trimmer.webp" alt="trimmer" />
+                        </div>
+                        <div class="text-center">
+                            <p>Best of Trimmers</p>
+                            <p class="font-semibold">From ₹ 399</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/electronics/projector.webp" alt="projector" />
+                        </div>
+                        <div class="text-center">
+                            <p>Projectors</p>
+                            <p class="font-semibold">Shop Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-full my-auto">
+            <a href="#">
+                <img src="./images/hero/adv.webp" alt="advertisement" class="h-full w-full" /></a>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-4 pb-8 flex gap-3">
+        <div class="flex flex-col gap-3 bg-white px-2">
+            <h2 class="text-2xl font-bold py-2 my-4">Beauty, Food
+                Toys & more</h2>
+            <div class="flex items-center gap-3 mb-2">
+                <div class="flex justify-around gap-2">
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/beauty/helmet.webp" alt="helmet" />
+                        </div>
+                        <div class="text-center">
+                            <p>Helmet</p>
+                            <p class="font-semibold">From ₹ 899</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/beauty/pen.webp" alt="pen" />
+                        </div>
+                        <div class="text-center">
+                            <p>Top Selling Pens</p>
+                            <p class="font-semibold">From ₹ 49</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/beauty/cycle.webp" alt="cycle" />
+                        </div>
+                        <div class="text-center">
+                            <p>Electric Cycle</p>
+                            <p class="font-semibold">Upto 40% off</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/beauty/teddy.webp" alt="teddy" />
+                        </div>
+                        <div class="text-center">
+                            <p>Soft Toys</p>
+                            <p class="font-semibold">From ₹ 759</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/beauty/coffee.webp" alt="coffee" />
+                        </div>
+                        <div class="text-center">
+                            <p>Coffee Powder</p>
+                            <p class="font-semibold">Shop Now</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-5 items-center justify-between border px-2 py-2 w-1/5">
+                        <div class="my-auto cursor-pointer hover:scale-105 flex items-center py-2">
+                            <img src="./images/beauty/tyre.webp" alt="tyre" />
+                        </div>
+                        <div class="text-center">
+                            <p>Tyres</p>
+                            <p class="font-semibold">Upto 60% off</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
