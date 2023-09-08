@@ -1,9 +1,10 @@
-import productSchema from "../models/productSchema.js";
+import productModel from "../models/productSchema.js";
 
 export const createProduct = async (req, res) => {
   try {
     const { title, description, price } = req.body;
-    const createProduct = await productSchema.create({
+    console.log(req.body)
+    const createProduct = await productModel.create({
       title,
       description,
       price,
@@ -26,14 +27,15 @@ export const createProduct = async (req, res) => {
   }
 };
 
-export const getAll = async (req, res) => {
+export const getAllProducts = async (req, res) => {
   try {
-    const product = await productSchema.find({});
+    const product = await productModel.find({});
 
     if (product) {
       res.json({
+        data:product,
         status: 200,
-        success: true,
+        success: true, 
         message: "Product fetched Successfully",
       });
     }
@@ -49,7 +51,7 @@ export const getAll = async (req, res) => {
 
 export const getById = async (req, res) => {
   try {
-    const product = await productSchema.findById(req.params.id);
+    const product = await productModel.findById(req.params.id);
 
     if (product) {
       res.json({
@@ -72,7 +74,7 @@ export const updateProduct = async (req, res) => {
   try {
     const { id } = req.params;
     const { title, description, price } = req.body;
-    const product = await productSchema.findById(id);
+    const product = await productModel.findById(id);
 
     if (product) {
       product.title = title;
@@ -98,7 +100,7 @@ export const updateProduct = async (req, res) => {
 
 export const deleteProduct = async (req, res) => {
   try {
-    const product = await productSchema.findByIdAndDelete(req.params.id);
+    const product = await productModel.findByIdAndDelete(req.params.id);
 
     if (product) {
       res.json({

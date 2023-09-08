@@ -36,12 +36,13 @@ arrowRight.addEventListener("click", () => {
 
 
 
-const furniture = document.getElementById('furniture')
-const furnitureList = document.getElementById('furniture-list')
+// const furniture = document.getElementById('furniture')
+// const furnitureList = document.getElementById('furniture-list')
 
-furniture.addEventListener('mouseenter', (() => {
-    furnitureList.classList.toggle('hidden')
-}))
-furniture.addEventListener('mouseout', (() => {
-    furnitureList.classList.toggle('hidden')
-}))  
+// furniture.addEventListener('mouseenter', (() => {
+//     furnitureList.classList.toggle('hidden')
+// }))
+// furniture.addEventListener('mouseout', (() => {
+//     furnitureList.classList.toggle('hidden')
+// }))  
+
